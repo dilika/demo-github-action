@@ -48,7 +48,7 @@ jobs:
           docker build -t $GITHUB_DOCKER_REGISTRY/dilika/$PROJECT/$PACKAGE_NAME .
       - name: Docker login
         run: |
-          docker login $GITHUB_DOCKER_REGISTRY -u {{ secrets.USERNAME }} -p ${{ secrets.GITHUB_TOKEN }}
+          docker login $GITHUB_DOCKER_REGISTRY -u dilika -p ${{ secrets.GITHUB_TOKEN }}
       - name: Docker push
         run: |
           docker push $GITHUB_DOCKER_REGISTRY/dilika/$PROJECT/$PACKAGE_NAME
