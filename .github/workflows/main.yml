@@ -11,7 +11,7 @@ on:
 env:
   GITHUB_DOCKER_REGISTRY: docker.pkg.github.com
   ORGANISATION: dilika
-  PROJECT: demo-cloud
+  PROJECT: demo-github-action
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
